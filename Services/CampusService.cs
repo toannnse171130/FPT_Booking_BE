@@ -1,20 +1,31 @@
+using FPT_Booking_BE.DTOs; 
 using FPT_Booking_BE.Models;
-using FPT_Booking_BE.Repositories;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace FPT_Booking_BE.Services
 {
     public class CampusService : ICampusService
     {
-        private readonly ICampusRepository _repo;
+        private readonly FptFacilityBookingContext _context;
 
-        public CampusService(ICampusRepository repo)
+        public CampusService(FptFacilityBookingContext context)
         {
-            _repo = repo;
+            _context = context;
         }
 
-        public async Task<IEnumerable<Campus>> GetAllCampuses()
+        public async Task<List<CampusDto>> GetAllCampuses()
         {
-            return await _repo.GetAllCampuses();
+            return await _context.Campuses
+                .Where(c => c.IsActive == true)
+                .Select(c => new CampusDto
+                {
+                    CampusId = c.CampusId,
+                    CampusName = c.CampusName
+                })
+                .ToListAsync();
         }
     }
 }

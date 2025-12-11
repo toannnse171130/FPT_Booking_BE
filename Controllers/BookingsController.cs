@@ -58,12 +58,101 @@ namespace FPT_Booking_BE.Controllers
         }
 
         [HttpPut("{id}/status")]
+        [Authorize(Roles = "Admin,Manager")] 
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] BookingStatusUpdate request)
         {
-            var result = await _bookingService.UpdateStatus(id, request.Status);
+            if (request.Status != "Approved" && request.Status != "Rejected")
+            {
+                return BadRequest(new { message = "Trạng thái không hợp lệ. Chỉ chấp nhận 'Approved' hoặc 'Rejected'." });
+            }
 
-            if (!result) return NotFound();
-            return Ok(new { message = "Đã cập nhật trạng thái đơn đặt phòng" });
+            var result = await _bookingService.UpdateStatus(id, request.Status, request.RejectionReason);
+
+            if (!result)
+            {
+                return BadRequest(new { message = "Không tìm thấy đơn đặt phòng hoặc đơn này không ở trạng thái 'Pending' để duyệt." });
+            }
+
+            return Ok(new { message = $"Đã cập nhật trạng thái thành {request.Status}" });
+        }
+
+
+        [HttpGet("availability")]
+        public async Task<IActionResult> CheckAvailability([FromQuery] int facilityId, [FromQuery] DateOnly date)
+        {
+            var bookedSlots = await _bookingService.GetBookedSlots(facilityId, date);
+
+            return Ok(new
+            {
+                facilityId = facilityId,
+                date = date,
+                bookedSlotIds = bookedSlots
+            });
+        }
+
+        [HttpPut("{id}/cancel")]
+        public async Task<IActionResult> CancelBooking(int id)
+        {
+            var userIdClaim = User.FindFirst("UserId");
+            if (userIdClaim == null) return Unauthorized();
+            int userId = int.Parse(userIdClaim.Value);
+
+            var result = await _bookingService.CancelBooking(userId, id);
+
+            if (result == "Success")
+            {
+                return Ok(new { message = "Hủy đặt phòng thành công!" });
+            }
+            else if (result.Contains("quyền")) 
+            {
+                return Forbid(result);
+            }
+            else
+            {
+                return BadRequest(new { message = result });
+            }
+        }
+
+        [HttpGet("schedule-today")]
+        //[Authorize(Roles = "Security,Admin,Manager")]
+        public async Task<IActionResult> GetSecuritySchedule([FromQuery] int campusId)
+        {
+            var schedule = await _bookingService.GetDailyScheduleForSecurity(campusId);
+            return Ok(schedule);
+        }
+
+
+        [HttpPost("recurring")]
+        public async Task<IActionResult> CreateRecurring([FromBody] BookingRecurringRequest request)
+        {
+            var userIdClaim = User.FindFirst("UserId");
+            if (userIdClaim == null) return Unauthorized();
+            int userId = int.Parse(userIdClaim.Value);
+
+            if (request.EndDate < request.StartDate)
+                return BadRequest(new { message = "Ngày kết thúc phải lớn hơn ngày bắt đầu" });
+
+            var result = await _bookingService.CreateRecurringBooking(userId, request);
+
+            return Ok(result);
+        }
+
+        [HttpPut("recurring/{recurrenceId}/status")]
+        public async Task<IActionResult> UpdateRecurringStatus(string recurrenceId, [FromBody] BookingStatusUpdate request)
+        {
+            if (request.Status != "Approved" && request.Status != "Rejected")
+            {
+                return BadRequest(new { message = "Trạng thái không hợp lệ. Chỉ chấp nhận 'Approved' hoặc 'Rejected'." });
+            }
+
+            var result = await _bookingService.UpdateRecurringStatus(recurrenceId, request.Status);
+
+            if (result.Contains("Không tìm thấy"))
+            {
+                return NotFound(new { message = result });
+            }
+
+            return Ok(new { message = result });
         }
     }
-}
+}   

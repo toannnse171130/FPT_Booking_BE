@@ -1,24 +1,23 @@
 using FPT_Booking_BE.DTOs;
 using FPT_Booking_BE.Models;
-using FPT_Booking_BE.Repositories;
+using System;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace FPT_Booking_BE.Services
 {
-    public interface IReportService
-    {
-        Task CreateReport(int userId, ReportCreateRequest request);
-        Task<IEnumerable<Report>> GetAllReports(string? status);
-        Task<bool> ResolveReport(int reportId, string status);
-    }
-
     public class ReportService : IReportService
     {
-        private readonly IReportRepository _repo;
-        public ReportService(IReportRepository repo) { _repo = repo; }
+        private readonly FptFacilityBookingContext _context;
 
-        public async Task CreateReport(int userId, ReportCreateRequest request)
+        public ReportService(FptFacilityBookingContext context)
         {
-            var report = new Report
+            _context = context;
+        }
+
+        public async Task<string> CreateReport(int userId, ReportCreateRequest request)
+        {
+            var newReport = new Report
             {
                 UserId = userId,
                 FacilityId = request.FacilityId,
@@ -26,25 +25,54 @@ namespace FPT_Booking_BE.Services
                 Title = request.Title,
                 Description = request.Description,
                 ReportType = request.ReportType,
-                Status = "Pending",
+                Status = "Pending", 
                 CreatedAt = DateTime.Now
             };
-            await _repo.AddReport(report);
+
+            _context.Reports.Add(newReport);
+            await _context.SaveChangesAsync();
+            return "Success";
         }
 
-        public async Task<IEnumerable<Report>> GetAllReports(string? status)
+        public async Task<List<ReportDto>> GetReports(int? userId, string role)
         {
-            return await _repo.GetReports(null, status);
+            var query = _context.Reports
+                .Include(r => r.User)
+                .Include(r => r.Facility)
+                .AsQueryable();
+
+            // Nếu là Student/Lecturer/Security -> Chỉ xem report của chính mình
+            if (role == "Student" || role == "Lecturer" || role == "Security")
+            {
+                query = query.Where(r => r.UserId == userId);
+            }
+            // Nếu là Admin/Manager -> Xem được tất cả (không lọc theo userId)
+
+            return await query
+                .Select(r => new ReportDto
+                {
+                    ReportId = r.ReportId,
+                    Title = r.Title,
+                    Description = r.Description,
+                    ReportType = r.ReportType,
+                    Status = r.Status,
+                    CreatedAt = r.CreatedAt,
+                    CreatedBy = r.User.Email,
+                    FacilityName = r.Facility != null ? r.Facility.FacilityName : "N/A"
+                })
+                .OrderByDescending(r => r.CreatedAt)
+                .ToListAsync(); 
         }
 
-        public async Task<bool> ResolveReport(int reportId, string status)
+        public async Task<bool> UpdateReportStatus(int reportId, string status)
         {
-            var report = await _repo.GetReportById(reportId);
+            var report = await _context.Reports.FindAsync(reportId);
             if (report == null) return false;
 
             report.Status = status;
-            report.ResolvedAt = DateTime.Now;
-            await _repo.UpdateReport(report);
+            report.ResolvedAt = DateTime.Now; 
+
+            await _context.SaveChangesAsync();
             return true;
         }
     }

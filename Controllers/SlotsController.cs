@@ -1,24 +1,27 @@
-using FPT_Booking_BE.Models;
 using FPT_Booking_BE.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FPT_Booking_BE.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SlotsController : ControllerBase
     {
-        private readonly ISlotService _service;
+        private readonly ISlotService _slotService;
 
-        public SlotsController(ISlotService service)
+        public SlotsController(ISlotService slotService)
         {
-            _service = service;
+            _slotService = slotService;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Slot>>> GetSlots()
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(await _service.GetAllSlots());
+            var slots = await _slotService.GetAllSlots();
+            return Ok(slots);
         }
     }
 }

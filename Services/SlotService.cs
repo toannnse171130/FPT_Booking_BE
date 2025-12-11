@@ -1,20 +1,37 @@
+using FPT_Booking_BE.DTOs;
 using FPT_Booking_BE.Models;
-using FPT_Booking_BE.Repositories;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace FPT_Booking_BE.Services
 {
     public class SlotService : ISlotService
     {
-        private readonly ISlotRepository _repo;
+        private readonly FptFacilityBookingContext _context;
 
-        public SlotService(ISlotRepository repo)
+        public SlotService(FptFacilityBookingContext context)
         {
-            _repo = repo;
+            _context = context;
         }
 
-        public async Task<IEnumerable<Slot>> GetAllSlots()
+        public async Task<List<SlotDto>> GetAllSlots()
         {
-            return await _repo.GetAllSlots();
+            var slots = await _context.Slots
+                .Where(s => s.IsActive == true)
+                .Select(s => new SlotDto
+                {
+                    SlotId = s.SlotId,
+                    SlotName = s.SlotName,
+                    StartTime = s.StartTime, 
+                    EndTime = s.EndTime,
+                    IsActive = s.IsActive ?? false
+                })
+                .OrderBy(s => s.SlotName)
+                .ToListAsync();
+
+            return slots;
         }
     }
 }

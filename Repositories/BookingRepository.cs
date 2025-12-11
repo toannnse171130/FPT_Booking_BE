@@ -19,16 +19,18 @@ namespace FPT_Booking_BE.Repositories
             await _context.Bookings.AddAsync(booking);
             await _context.SaveChangesAsync();
         }
-
-        public async Task<bool> IsBookingConflict(int facilityId, DateOnly bookingDate, int slotId)
+        public async Task<Booking?> GetConflictingBooking(int facilityId, DateOnly date, int slotId)
         {
-            return await _context.Bookings.AnyAsync(b =>
-                b.FacilityId == facilityId &&
-                b.BookingDate == bookingDate && 
-                b.SlotId == slotId &&
-                b.Status != "Rejected" &&
-                b.Status != "Cancelled"
-            );
+            return await _context.Bookings
+                .Include(b => b.User)
+                .ThenInclude(u => u.Role)
+                .FirstOrDefaultAsync(b =>
+                    b.FacilityId == facilityId &&
+                    b.BookingDate == date &&
+                    b.SlotId == slotId &&
+                    b.Status != "Cancelled" &&
+                    b.Status != "Rejected"
+                );
         }
 
         public async Task<IEnumerable<Booking>> GetBookings(int? userId, string? status)
@@ -54,6 +56,40 @@ namespace FPT_Booking_BE.Repositories
         {
             _context.Bookings.Update(booking);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<int>> GetBookedSlotIds(int facilityId, DateOnly date)
+        {
+            return await _context.Bookings
+                .Where(b => b.FacilityId == facilityId &&
+                            b.BookingDate == date &&
+                            b.Status != "Cancelled" &&
+                            b.Status != "Rejected")
+                .Select(b => b.SlotId) 
+                .Distinct()            
+                .ToListAsync();
+        }
+
+        public async Task<bool> IsBookingConflict(int facilityId, DateOnly bookingDate, int slotId)
+        {
+            return await _context.Bookings.AnyAsync(b =>
+                b.FacilityId == facilityId &&
+                b.BookingDate == bookingDate &&
+                b.SlotId == slotId &&
+                b.Status != "Cancelled" && b.Status != "Rejected"
+            );
+        }
+
+        public async Task<Booking?> GetConflictingBooking2(int facilityId, DateOnly bookingDate, int slotId)
+        {
+            return await _context.Bookings
+                .Include(b => b.User).ThenInclude(u => u.Role) 
+                .FirstOrDefaultAsync(b =>
+                    b.FacilityId == facilityId &&
+                    b.BookingDate == bookingDate &&
+                    b.SlotId == slotId &&
+                    b.Status != "Cancelled" && b.Status != "Rejected"
+                );
         }
     }
 }

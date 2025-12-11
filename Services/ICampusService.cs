@@ -1,9 +1,11 @@
-using FPT_Booking_BE.Models;
+using FPT_Booking_BE.DTOs;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace FPT_Booking_BE.Services
 {
     public interface ICampusService
     {
-        Task<IEnumerable<Campus>> GetAllCampuses();
+        Task<List<CampusDto>> GetAllCampuses();
     }
 }

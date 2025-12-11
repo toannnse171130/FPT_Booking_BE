@@ -156,3 +156,4 @@ E:\JOB FA25\1M\Backend\FPT_Booking_BE\obj\Debug\net9.0\refint\FPT_Booking_BE.dll
 E:\JOB FA25\1M\Backend\FPT_Booking_BE\obj\Debug\net9.0\FPT_Booking_BE.pdb
 E:\JOB FA25\1M\Backend\FPT_Booking_BE\obj\Debug\net9.0\FPT_Booking_BE.genruntimeconfig.cache
 E:\JOB FA25\1M\Backend\FPT_Booking_BE\obj\Debug\net9.0\ref\FPT_Booking_BE.dll
+E:\JOB FA25\1M\Backend\FPT_Booking_BE\obj\Debug\net9.0\FPT_Booking_BE.sourcelink.json

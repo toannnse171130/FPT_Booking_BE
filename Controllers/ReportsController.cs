@@ -11,9 +11,12 @@ namespace FPT_Booking_BE.Controllers
     [Authorize]
     public class ReportsController : ControllerBase
     {
-        private readonly IReportService _service;
+        private readonly IReportService _reportService;
 
-        public ReportsController(IReportService service) { _service = service; }
+        public ReportsController(IReportService service)
+        {
+            _reportService = service;
+        }
 
         [HttpPost]
         public async Task<IActionResult> CreateReport([FromBody] ReportCreateRequest request)
@@ -22,22 +25,41 @@ namespace FPT_Booking_BE.Controllers
             if (userIdClaim == null) return Unauthorized();
             int userId = int.Parse(userIdClaim.Value);
 
-            await _service.CreateReport(userId, request);
-            return Ok(new { message = "Báo cáo đã được gửi!" });
+            var result = await _reportService.CreateReport(userId, request);
+
+            if (result == "Success")
+            {
+                return Ok(new { message = "Gửi báo cáo thành công! Cảm ơn phản hồi của bạn." });
+            }
+
+            return BadRequest(new { message = result });
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetReports([FromQuery] string? status)
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(await _service.GetAllReports(status));
+            var userIdClaim = User.FindFirst("UserId");
+            var roleClaim = User.FindFirst(System.Security.Claims.ClaimTypes.Role);
+
+            if (userIdClaim == null) return Unauthorized();
+
+            int userId = int.Parse(userIdClaim.Value);
+            string role = roleClaim?.Value ?? "Student";
+
+            var reports = await _reportService.GetReports(userId, role);
+            return Ok(reports);
         }
 
-        [HttpPut("{id}/resolve")]
-        public async Task<IActionResult> ResolveReport(int id, [FromBody] string status)
+        // Admin/Manager duyệt báo cáo
+        [HttpPut("{id}/status")]
+        [Authorize(Roles = "Admin,Manager")] 
+        public async Task<IActionResult> UpdateStatus(int id, [FromBody] ReportStatusUpdate request)
         {
-            var result = await _service.ResolveReport(id, status);
-            if (!result) return NotFound();
-            return Ok(new { message = "Cập nhật trạng thái thành công" });
+            var result = await _reportService.UpdateReportStatus(id, request.Status);
+            if (!result) return NotFound(new { message = "Không tìm thấy báo cáo." });
+
+            return Ok(new { message = "Cập nhật trạng thái thành công." });
         }
+
     }
 }

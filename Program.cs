@@ -61,6 +61,8 @@ builder.Services.AddScoped<IReportService, ReportService>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 builder.Services.AddScoped<INotificationService, NotificationService>();
 
+builder.Services.AddScoped<IFacilityTypeService, FacilityTypeService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
