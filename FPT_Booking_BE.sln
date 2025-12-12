@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPT_Booking_BE", "FPT_Booking_BE.csproj", "{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C06C7866-5116-430A-93A6-119E17B405A2}
+	EndGlobalSection
+EndGlobal
