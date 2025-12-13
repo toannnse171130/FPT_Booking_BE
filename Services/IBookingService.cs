@@ -21,5 +21,7 @@ namespace FPT_Booking_BE.Services
         Task<string> UpdateRecurringStatus(string recurrenceId, string status);
 
         Task<bool> StaffCancelBookingAsync(int bookingId, int staffId, string reason);
+
+        Task<PagedResult<BookingResponse>> GetBookingsFilterAsync(BookingFilterRequest request);
     }
 }

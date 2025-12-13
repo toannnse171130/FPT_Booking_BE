@@ -66,6 +66,12 @@ builder.Services.AddScoped<IFacilityTypeService, FacilityTypeService>();
 
 builder.Services.AddScoped<IAssetService, AssetService>();
 
+builder.Services.AddScoped<ISecurityTaskService, SecurityTaskService>();
+
+builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddScoped<IDashboardService, DashboardService>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {

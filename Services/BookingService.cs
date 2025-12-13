@@ -466,5 +466,69 @@ namespace FPT_Booking_BE.Services
 
             return $"Thành công! Đã cập nhật trạng thái {status} cho {bookings.Count} đơn đặt phòng.";
         }
+
+        public async Task<PagedResult<BookingResponse>> GetBookingsFilterAsync(BookingFilterRequest request)
+        {
+            var query = _context.Bookings
+                .Include(b => b.Facility).ThenInclude(f => f.Campus) 
+                .Include(b => b.User) 
+                .AsQueryable();
+
+            if (request.FromDate.HasValue)
+            {
+                var fromDate = DateOnly.FromDateTime(request.FromDate.Value);
+                query = query.Where(b => b.BookingDate >= fromDate);
+            }
+
+            if (request.ToDate.HasValue)
+            {
+                var toDate = DateOnly.FromDateTime(request.ToDate.Value);
+                query = query.Where(b => b.BookingDate <= toDate);
+            }
+
+            if (request.UserId.HasValue)
+                query = query.Where(b => b.UserId == request.UserId);
+
+            if (request.FacilityId.HasValue)
+                query = query.Where(b => b.FacilityId == request.FacilityId);
+
+            if (request.CampusId.HasValue)
+                query = query.Where(b => b.Facility != null && b.Facility.CampusId == request.CampusId);
+
+            if (!string.IsNullOrEmpty(request.Status))
+                query = query.Where(b => b.Status == request.Status);
+
+            if (request.SortBy == "Oldest")
+                query = query.OrderBy(b => b.BookingDate).ThenBy(b => b.BookingId);
+            else
+                query = query.OrderByDescending(b => b.BookingDate).ThenByDescending(b => b.BookingId);
+
+            int totalRecords = await query.CountAsync();
+
+            var items = await query
+                .Skip((request.PageIndex - 1) * request.PageSize)
+                .Take(request.PageSize)
+                .Select(b => new BookingResponse
+                {
+                    BookingId = b.BookingId,
+                    FacilityName = b.Facility != null ? b.Facility.FacilityName : "Unknown",
+                    CampusName = (b.Facility != null && b.Facility.Campus != null) ? b.Facility.Campus.CampusName : "Unknown",
+                    BookingDate = b.BookingDate.ToDateTime(TimeOnly.MinValue),
+                    StartTime = TimeSpan.Zero,
+                    EndTime = TimeSpan.Zero,
+                    Status = b.Status ?? "Pending",
+                    BookedBy = b.User.FullName,
+                    UserId = b.UserId
+                })
+                .ToListAsync();
+
+            return new PagedResult<BookingResponse>
+            {
+                Items = items,
+                TotalRecords = totalRecords,
+                PageIndex = request.PageIndex,
+                PageSize = request.PageSize
+            };
+        }
     }
 }

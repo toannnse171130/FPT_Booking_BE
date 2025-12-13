@@ -42,23 +42,6 @@ namespace FPT_Booking_BE.Controllers
             return Ok(new { message = "Gửi yêu cầu đặt phòng thành công!" });
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetHistory([FromQuery] string? status)
-        {
-            var userIdClaim = User.FindFirst("UserId");
-            if (userIdClaim == null) return Unauthorized();
-            int userId = int.Parse(userIdClaim.Value);
-
-            var bookings = await _bookingService.GetHistory(userId);
-
-            if (!string.IsNullOrEmpty(status))
-            {
-                bookings = bookings.Where(b => b.Status.ToLower() == status.ToLower()).ToList();
-            }
-
-            return Ok(bookings);
-        }
-
         [HttpPut("{id}/status")]
         [Authorize(Roles = "Admin,Manager")] 
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] BookingStatusUpdate request)
@@ -169,6 +152,35 @@ namespace FPT_Booking_BE.Controllers
             }
 
             return Ok(new { message = "Đã hủy lịch và gửi thông báo thành công!" });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetBookings([FromQuery] BookingFilterRequest request)
+        {
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            var userId = int.Parse(User.FindFirst("UserId")?.Value ?? "0");
+
+            // Nếu user muốn xem "Lịch sử của tôi" (My History)
+            // Hoặc nếu là SV/GV thì mặc định gán UserId vào filter để không xem trộm lịch sử người khác (trừ khi xem lịch phòng công khai)
+            bool isViewingPublicSchedule = request.FacilityId.HasValue;
+
+            if (!isViewingPublicSchedule)
+            {
+                if (role != "Admin" && role != "Manager" && role != "Staff" && role != "FacilityAdmin")
+                {
+                    request.UserId = userId;
+                }
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(request.Status))
+                {
+                    request.Status = "Approved";
+                }
+            }
+
+            var result = await _bookingService.GetBookingsFilterAsync(request);
+            return Ok(result);
         }
 
     }

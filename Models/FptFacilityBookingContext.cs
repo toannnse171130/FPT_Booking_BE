@@ -36,7 +36,7 @@ public partial class FptFacilityBookingContext : DbContext
     public virtual DbSet<Slot> Slots { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
-
+    public virtual DbSet<SecurityTask> SecurityTasks { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Server=localhost;Database=FPT_FacilityBooking;Trusted_Connection=True;TrustServerCertificate=True;");
 
