@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\DTOs",
+    "\\Models",
+    "\\Properties",
+    "\\Repositories",
+    "\\Services"
+  ],
+  "SelectedNode": "\\Services\\NotificationService.cs",
+  "PreviewInSolutionExplorer": false
+}

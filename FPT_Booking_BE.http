@@ -1,0 +1,6 @@
+@FPT_Booking_BE_HostAddress = http://localhost:5177
+
+GET {{FPT_Booking_BE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
