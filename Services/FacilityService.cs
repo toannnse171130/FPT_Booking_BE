@@ -21,7 +21,6 @@ namespace FPT_Booking_BE.Services
             var query = _context.Facilities
                 .Include(f => f.Campus)
                 .Include(f => f.Type)
-                .Where(f => f.Status == "Available")
                 .AsQueryable();
 
             if (!string.IsNullOrEmpty(name))
