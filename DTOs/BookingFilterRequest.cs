@@ -22,6 +22,7 @@ namespace FPT_Booking_BE.DTOs
     public class BookingResponse
     {
         public int BookingId { get; set; }
+        public int SlotId { get; set; }
         public string FacilityName { get; set; } = null!; 
         public string CampusName { get; set; } = null!;  
         public DateTime BookingDate { get; set; }

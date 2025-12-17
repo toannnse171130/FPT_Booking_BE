@@ -524,6 +524,7 @@ namespace FPT_Booking_BE.Services
                 .Select(b => new BookingResponse
                 {
                     BookingId = b.BookingId,
+                    SlotId = b.Slot.SlotId,
                     FacilityName = b.Facility != null ? b.Facility.FacilityName : "Unknown",
                     CampusName = (b.Facility != null && b.Facility.Campus != null) ? b.Facility.Campus.CampusName : "Unknown",
                     BookingDate = b.BookingDate.ToDateTime(TimeOnly.MinValue),
