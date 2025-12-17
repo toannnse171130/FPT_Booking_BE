@@ -529,7 +529,7 @@ namespace FPT_Booking_BE.Services
                         SlotId = request.SlotId,
                         Purpose = request.Purpose,
                         Status = (GetRolePriority(user.Role.RoleName) == 3) ? "Approved" : "Pending",
-                        BookingType = "Recurring",
+                        BookingType = "Group",
                         RecurrenceGroupId = recurrenceId.ToString(), 
                         PriorityLevel = "Low",
                         CreatedAt = DateTime.Now

@@ -47,6 +47,14 @@ namespace FPT_Booking_BE.Controllers
             return Ok(tasks);
         }
 
+        [HttpGet("all")]
+        [Authorize(Roles = "Admin,Manager,FacilityAdmin")]
+        public async Task<IActionResult> GetAllTasks()
+        {
+            var tasks = await _taskService.GetAllTasksAsync();
+            return Ok(tasks);
+        }
+
         [HttpPut("complete/{taskId}")]
         [Authorize(Roles = "Security")] 
         public async Task<IActionResult> CompleteTask(int taskId, [FromBody] CompleteTaskRequest request)

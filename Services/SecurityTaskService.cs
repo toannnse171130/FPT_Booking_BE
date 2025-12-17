@@ -1,4 +1,5 @@
-﻿using FPT_Booking_BE.Models;
+﻿using FPT_Booking_BE.DTOs;
+using FPT_Booking_BE.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FPT_Booking_BE.Services
@@ -29,13 +30,61 @@ namespace FPT_Booking_BE.Services
             }
         }
 
-        public async Task<IEnumerable<SecurityTask>> GetPendingTasksAsync()
+        public async Task<IEnumerable<SecurityTaskDto>> GetPendingTasksAsync()
         {
-            return await _context.SecurityTasks
+            var tasks = await _context.SecurityTasks
                 .Where(t => t.Status != "Completed")
                 .OrderByDescending(t => t.Priority) 
                 .ThenBy(t => t.CreatedAt)
                 .ToListAsync();
+
+            return await MapTasksToDtos(tasks);
+        }
+
+        public async Task<IEnumerable<SecurityTaskDto>> GetAllTasksAsync()
+        {
+            var tasks = await _context.SecurityTasks
+                .OrderByDescending(t => t.CreatedAt)
+                .ToListAsync();
+
+            return await MapTasksToDtos(tasks);
+        }
+
+        private async Task<List<SecurityTaskDto>> MapTasksToDtos(List<SecurityTask> tasks)
+        {
+            var result = new List<SecurityTaskDto>();
+
+            foreach (var task in tasks)
+            {
+                string? assignedToUserName = null;
+                string? createdByUserName = null;
+
+                if (task.AssignedToUserId.HasValue)
+                {
+                    var assignedUser = await _context.Users.FindAsync(task.AssignedToUserId.Value);
+                    assignedToUserName = assignedUser?.FullName ?? "Unknown";
+                }
+
+                var createdByUser = await _context.Users.FindAsync(task.CreatedBy);
+                createdByUserName = createdByUser?.FullName ?? "Unknown";
+                result.Add(new SecurityTaskDto
+                {
+                    TaskId = task.TaskId,
+                    Title = task.Title,
+                    Description = task.Description,
+                    Status = task.Status,
+                    Priority = task.Priority,
+                    AssignedToUserId = task.AssignedToUserId,
+                    AssignedToUserName = assignedToUserName,
+                    CreatedBy = task.CreatedBy,
+                    CreatedByUserName = createdByUserName,
+                    CreatedAt = task.CreatedAt,
+                    CompletedAt = task.CompletedAt,
+                    ReportNote = task.ReportNote
+                });
+            }
+
+            return result;
         }
 
         public async Task<bool> CompleteTaskAsync(int taskId, string reportNote)

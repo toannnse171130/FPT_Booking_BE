@@ -69,7 +69,7 @@ namespace FPT_Booking_BE.Repositories
                 .Include(b => b.Facility)
                 .Include(b => b.Slot)
                 .Include(b => b.User)
-                .Where(b => !string.IsNullOrEmpty(b.RecurrenceGroupId) && b.BookingType == "Recurring")
+                .Where(b => !string.IsNullOrEmpty(b.RecurrenceGroupId) && b.BookingType == "Group")
                 .AsQueryable();
 
             if (userId.HasValue) query = query.Where(b => b.UserId == userId);
@@ -85,7 +85,7 @@ namespace FPT_Booking_BE.Repositories
                 .Include(b => b.Slot)
                 .Include(b => b.User)
                 .ThenInclude(u => u.Role)
-                .Where(b => !string.IsNullOrEmpty(b.RecurrenceGroupId) && b.BookingType == "Recurring")
+                .Where(b => !string.IsNullOrEmpty(b.RecurrenceGroupId) && b.BookingType == "Group")
                 .AsQueryable();
 
             if (userId.HasValue)
