@@ -36,18 +36,19 @@ namespace FPT_Booking_BE.Controllers
             return Ok(new { token = token });
         }
 
-        // [HttpPost("google-login")]
-        // public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequest request)
-        // {
-        //     var token = await _authService.LoginWithGoogle(request.IdToken);
+        [HttpPost("google-login")]
+        public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginRequest request)
+        {
+            Console.WriteLine("Received Google login request with ID token: " + request.IdToken);
+            var token = await _authService.LoginWithGoogle(request.IdToken);
 
-        //     if (token == null)
-        //     {
-        //         return BadRequest(new { message = "Đăng nhập Google thất bại hoặc email không hợp lệ!" });
-        //     }
+            if (token == null)
+            {
+                return BadRequest(new { message = "Đăng nhập Google thất bại hoặc email không hợp lệ!" });
+            }
 
-        //     return Ok(new { token = token });
-        // }
+            return Ok(new { token = token });
+        }
 
 
     }

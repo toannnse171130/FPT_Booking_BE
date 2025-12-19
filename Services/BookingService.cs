@@ -15,19 +15,22 @@ namespace FPT_Booking_BE.Services
         private readonly IBookingRepository _bookingRepo;
         private readonly INotificationService _notificationService;
         private readonly ISlotRepository _slotRepo;
+        private readonly ISemesterRepository _semesterRepo;
 
 
         public BookingService(
             IBookingRepository bookingRepo, 
             FptFacilityBookingContext context,
             INotificationService notificationService,
-            ISlotRepository slotRepo
+            ISlotRepository slotRepo,
+            ISemesterRepository semesterRepo
             )
         {
             _bookingRepo = bookingRepo;
             _context = context;
             _notificationService = notificationService;
             _slotRepo = slotRepo;
+            _semesterRepo = semesterRepo;
         }
 
         public async Task<string> CreateBooking(int userId, BookingCreateRequest request)
@@ -41,42 +44,52 @@ namespace FPT_Booking_BE.Services
             var facility = await _context.Facilities.Include(f => f.Type).FirstOrDefaultAsync(f => f.FacilityId == request.FacilityId);
             if (facility == null) return "Phòng không tồn tại.";
 
-            if (GetRolePriority(currentUser.Role.RoleName) == 1) 
+            // Check if booking date is within a semester (skip for admin/staff)
+            int userPriority = GetRolePriority(currentUser.Role.RoleName);
+            if (userPriority < 3) // Only check semester for non-admin/staff roles
+            {
+                var semester = await _semesterRepo.GetSemesterByDateAsync(request.BookingDate);
+                if (semester == null)
+                {
+                    return "Ngày đặt phòng không nằm trong học kỳ nào. Vui lòng chọn ngày khác.";
+                }
+            }
+
+            if (userPriority == 1) 
             {
                 var allowedTypes = new List<string> { "Phòng học", "Sân banh", "Phòng Lab" };
                 if (!allowedTypes.Contains(facility.Type.TypeName))
                     return "Sinh viên không có quyền đặt loại phòng này.";
             }
 
-
-            var conflictBooking = await _bookingRepo.GetConflictingBooking(
-                request.FacilityId, request.BookingDate, request.SlotId);
-
-            if (conflictBooking != null)
+            // Use existing CheckBookingConflict method for cleaner code
+            var conflictCheck = await CheckBookingConflict(userId, request.FacilityId, request.BookingDate, request.SlotId);
+            
+            if (conflictCheck != null)
             {
-                int currentPriority = GetRolePriority(currentUser.Role.RoleName);
-                int ownerPriority = GetRolePriority(conflictBooking.User.Role.RoleName);
-
-                // Chỉ được đè nếu Quyền mình CAO HƠN (Staff > GV, Staff > SV)
-                if (currentPriority > ownerPriority)
+                if (conflictCheck.CanOverride)
                 {
-
-                    conflictBooking.Status = "Cancelled";
-                    //conflictBooking.Note = $"Đã bị hủy bởi {currentUser.Role.RoleName} để ưu tiên sự kiện trường.";
-
-                    _context.Bookings.Update(conflictBooking);
-                    await _notificationService.CreateNotificationAsync(new Notification
+                    // Cancel the conflicting booking
+                    var conflictBooking = await _bookingRepo.GetConflictingBooking(
+                        request.FacilityId, request.BookingDate, request.SlotId);
+                    
+                    if (conflictBooking != null)
                     {
-                        UserId = conflictBooking.UserId,
-                        Title = "Lịch đặt bị hủy do ưu tiên",
-                        Message = $"Đơn đặt phòng {conflictBooking.BookingId} của bạn đã bị hủy để ưu tiên cho sự kiện nhà trường.",
-                        CreatedAt = DateTime.Now,
-                        IsRead = false
-                    });
+                        conflictBooking.Status = "Cancelled";
+                        _context.Bookings.Update(conflictBooking);
+                        await _notificationService.CreateNotificationAsync(new Notification
+                        {
+                            UserId = conflictBooking.UserId,
+                            Title = "Lịch đặt bị hủy do ưu tiên",
+                            Message = $"Đơn đặt phòng {conflictBooking.BookingId} của bạn đã bị hủy để ưu tiên cho sự kiện nhà trường.",
+                            CreatedAt = DateTime.Now,
+                            IsRead = false
+                        });
+                    }
                 }
                 else
                 {
-                    return "Phòng này đã có người đặt trong Slot này rồi (Bạn không đủ quyền ưu tiên để ghi đè)!";
+                    return conflictCheck.Message;
                 }
             }
 
@@ -128,6 +141,68 @@ namespace FPT_Booking_BE.Services
                 default:
                     return 0;
             }
+        }
+
+        /// <summary>
+        /// Helper method to process booking conflict and find alternatives
+        /// </summary>
+        private async Task<(bool canBook, int facilityId, string note)> ProcessBookingConflict(
+            User user, 
+            Facility originalFacility, 
+            DateOnly bookingDate, 
+            int slotId, 
+            bool autoFindAlternative,
+            string dateStr)
+        {
+            var conflict = await _bookingRepo.GetConflictingBooking(originalFacility.FacilityId, bookingDate, slotId);
+
+            if (conflict == null)
+            {
+                return (true, originalFacility.FacilityId, "Đặt đúng phòng yêu cầu");
+            }
+
+            int myPriority = GetRolePriority(user.Role.RoleName);
+            int ownerPriority = GetRolePriority(conflict.User.Role.RoleName);
+
+            // Can override if priority is higher
+            if (myPriority > ownerPriority)
+            {
+                conflict.Status = "Cancelled";
+                _context.Bookings.Update(conflict);
+                await _notificationService.CreateNotificationAsync(new Notification
+                {
+                    UserId = conflict.UserId,
+                    Title = "Lịch bị hủy do ưu tiên (Định kỳ)",
+                    Message = $"Lịch ngày {dateStr} của bạn bị hủy để ưu tiên.",
+                    CreatedAt = DateTime.Now,
+                    IsRead = false
+                });
+                return (true, originalFacility.FacilityId, $"Đã đè lịch của {conflict.User.Email}");
+            }
+
+            // Try to find alternative room if requested
+            if (autoFindAlternative)
+            {
+                var alternativeFacilities = await _context.Facilities
+                    .Where(f => f.CampusId == originalFacility.CampusId &&
+                                f.TypeId == originalFacility.TypeId &&
+                                f.Status == "Available" &&
+                                f.FacilityId != originalFacility.FacilityId)
+                    .ToListAsync();
+
+                foreach (var alt in alternativeFacilities)
+                {
+                    bool isAltBusy = await _bookingRepo.IsBookingConflict(alt.FacilityId, bookingDate, slotId);
+                    if (!isAltBusy)
+                    {
+                        return (true, alt.FacilityId, $"Phòng gốc bận, chuyển sang {alt.FacilityName}");
+                    }
+                }
+
+                return (false, originalFacility.FacilityId, "Phòng gốc bận, không có phòng thay thế");
+            }
+
+            return (false, originalFacility.FacilityId, "Phòng đã có người đặt (không tìm phòng thay thế)");
         }
 
         public async Task<List<BookingHistoryDto>> GetHistory(int userId)
@@ -478,71 +553,38 @@ namespace FPT_Booking_BE.Services
                 string dateStr = currentDate.ToString("dd/MM/yyyy");
                 string dayName = DateTimeUtils.GetVietnameseDayName(currentDate);
 
-                int finalFacilityId = originalFacility.FacilityId;
-                bool canBook = false;
-                string note = "";
-
-                // Check for conflicts
-                var conflict = await _bookingRepo.GetConflictingBooking(originalFacility.FacilityId, currentDate, request.SlotId);
-
-                if (conflict == null)
+                // Check if date is within a semester (skip for admin/staff)
+                int userPriority = GetRolePriority(user.Role.RoleName);
+                if (userPriority < 3) // Only check semester for non-admin/staff roles
                 {
-                    canBook = true;
-                    note = "Đặt đúng phòng yêu cầu";
-                }
-                else
-                {
-                    int myPriority = GetRolePriority(user.Role.RoleName);
-                    int ownerPriority = GetRolePriority(conflict.User.Role.RoleName);
-
-                    // Can override if priority is higher
-                    if (myPriority > ownerPriority)
+                    var semester = await _semesterRepo.GetSemesterByDateAsync(currentDate);
+                    if (semester == null)
                     {
-                        conflict.Status = "Cancelled";
-                        _context.Bookings.Update(conflict);
-                        await _notificationService.CreateNotificationAsync(new Notification
-                        {
-                            UserId = conflict.UserId,
-                            Title = "Lịch bị hủy do ưu tiên (Định kỳ)",
-                            Message = $"Lịch ngày {dateStr} ({dayName}) của bạn bị hủy để ưu tiên.",
-                            CreatedAt = DateTime.Now,
-                            IsRead = false
-                        });
-                        canBook = true;
-                        note = $"Đã đè lịch của {conflict.User.Email}";
-                    }
-                    else if (request.AutoFindAlternative)
-                    {
-                        // Try to find alternative room
-                        var alternativeFacilities = await _context.Facilities
-                            .Where(f => f.CampusId == originalFacility.CampusId &&
-                                        f.TypeId == originalFacility.TypeId &&
-                                        f.Status == "Available" &&
-                                        f.FacilityId != originalFacility.FacilityId)
-                            .ToListAsync();
-
-                        foreach (var alt in alternativeFacilities)
-                        {
-                            bool isAltBusy = await _bookingRepo.IsBookingConflict(alt.FacilityId, currentDate, request.SlotId);
-                            if (!isAltBusy)
-                            {
-                                finalFacilityId = alt.FacilityId;
-                                canBook = true;
-                                note = $"Phòng gốc bận, chuyển sang {alt.FacilityName}";
-                                break;
-                            }
-                        }
+                        failedCount++;
+                        resultLog.Add($"{dateStr} ({dayName}): ✗ THẤT BẠI - Ngày không nằm trong học kỳ nào");
                         
-                        if (!canBook)
+                        if (!request.SkipConflicts)
                         {
-                            note = "Phòng gốc bận, không có phòng thay thế";
+                            return new 
+                            { 
+                                Success = false, 
+                                Message = $"Ngày {dateStr} không nằm trong học kỳ nào. Đã hủy toàn bộ đặt phòng định kỳ.",
+                                Logs = resultLog
+                            };
                         }
-                    }
-                    else
-                    {
-                        note = "Phòng đã có người đặt (không tìm phòng thay thế)";
+                        continue;
                     }
                 }
+
+                // Use helper method to process conflicts and find alternatives
+                var (canBook, finalFacilityId, note) = await ProcessBookingConflict(
+                    user, 
+                    originalFacility, 
+                    currentDate, 
+                    request.SlotId, 
+                    request.AutoFindAlternative,
+                    $"{dateStr} ({dayName})"
+                );
 
                 // Create booking if possible
                 if (canBook)
@@ -562,12 +604,12 @@ namespace FPT_Booking_BE.Services
                     };
                     await _context.Bookings.AddAsync(newBooking);
                     successCount++;
-                    resultLog.Add($"{dateStr} ({dayName}): ✓ THÀNH CÔNG - {note}");
+                    //resultLog.Add($"{dateStr} ({dayName}): ✓ THÀNH CÔNG - {note}");
                 }
                 else
                 {
                     failedCount++;
-                    resultLog.Add($"{dateStr} ({dayName}): ✗ THẤT BẠI - {note}");
+                    resultLog.Add($"{dateStr} ({dayName}):  THẤT BẠI - {note}");
                     
                     // If not skipping conflicts, rollback all
                     if (!request.SkipConflicts)
@@ -704,6 +746,35 @@ namespace FPT_Booking_BE.Services
                 .FirstOrDefaultAsync(u => u.UserId == userId);
 
             if (currentUser == null) return null;
+
+            // Check if booking date is within a semester (skip for admin/staff)
+            int userPriority = GetRolePriority(currentUser.Role.RoleName);
+            if (userPriority < 3) // Only check semester for non-admin/staff roles
+            {
+                var semester = await _semesterRepo.GetSemesterByDateAsync(bookingDate);
+                if (semester == null)
+                {
+                    return new BookingConflictDto
+                    {
+                        BookingId = 0,
+                        UserId = userId,
+                        UserName = currentUser.FullName,
+                        UserEmail = currentUser.Email,
+                        UserRole = currentUser.Role.RoleName,
+                        FacilityId = facilityId,
+                        FacilityName = "",
+                        BookingDate = bookingDate,
+                        SlotId = slotId,
+                        SlotName = "",
+                        StartTime = TimeOnly.MinValue,
+                        EndTime = TimeOnly.MinValue,
+                        Purpose = "",
+                        Status = "",
+                        CanOverride = false,
+                        Message = "Ngày đặt phòng không nằm trong học kỳ nào. Vui lòng chọn ngày khác."
+                    };
+                }
+            }
 
             var conflictBooking = await _context.Bookings
                 .Include(b => b.User)
@@ -883,7 +954,7 @@ namespace FPT_Booking_BE.Services
                 }
                 else
                 {
-                    conflictDto.Message = "Phòng trống, có thể đặt";
+                    // conflictDto.Message = "Phòng trống, có thể đặt";
                     response.CanProceedCount++;
                 }
 

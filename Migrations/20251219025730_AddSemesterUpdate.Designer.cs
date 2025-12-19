@@ -4,6 +4,7 @@ using FPT_Booking_BE.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FPT_Booking_BE.Migrations
 {
     [DbContext(typeof(FptFacilityBookingContext))]
-    partial class FptFacilityBookingContextModelSnapshot : ModelSnapshot
+    [Migration("20251219025730_AddSemesterUpdate")]
+    partial class AddSemesterUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -893,41 +896,6 @@ namespace FPT_Booking_BE.Migrations
                         .HasName("PK__Semester__4BD03CA5A2A3E7B1");
 
                     b.ToTable("Semesters");
-
-                    b.HasData(
-                        new
-                        {
-                            SemesterId = 1,
-                            EndDate = new DateOnly(2026, 5, 15),
-                            IsActive = false,
-                            Name = "Học kỳ Spring 2026",
-                            StartDate = new DateOnly(2026, 1, 15)
-                        },
-                        new
-                        {
-                            SemesterId = 2,
-                            EndDate = new DateOnly(2026, 12, 15),
-                            IsActive = true,
-                            Name = "Học kỳ Fall 2026",
-                            StartDate = new DateOnly(2026, 8, 15)
-                        },
-                        new
-                        {
-                            SemesterId = 3,
-                            EndDate = new DateOnly(2025, 5, 15),
-                            IsActive = false,
-                            Name = "Học kỳ Spring 2025",
-                            StartDate = new DateOnly(2025, 1, 15)
-                        },
-                        new
-                        {
-                            SemesterId = 4,
-                            EndDate = new DateOnly(2025, 12, 31),
-                            IsActive = true,
-                            Name = "Học kỳ Fall 2025",
-                            StartDate = new DateOnly(2025, 8, 15)
-                        }
-                    );
                 });
 
             modelBuilder.Entity("FPT_Booking_BE.Models.Slot", b =>

@@ -39,6 +39,8 @@ public partial class FptFacilityBookingContext : DbContext
 
     public virtual DbSet<SecurityTask> SecurityTasks { get; set; }
 
+    public virtual DbSet<Semester> Semesters { get; set; }
+
     public virtual DbSet<Slot> Slots { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
@@ -328,6 +330,17 @@ public partial class FptFacilityBookingContext : DbContext
                 .HasForeignKey(d => d.CreatedBy)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_SecurityTasks_CreatedBy");
+        });
+
+        modelBuilder.Entity<Semester>(entity =>
+        {
+            entity.HasKey(e => e.SemesterId).HasName("PK__Semester__4BD03CA5A2A3E7B1");
+
+            entity.Property(e => e.SemesterId).HasColumnName("SemesterID");
+            entity.Property(e => e.Name)
+                .HasMaxLength(100)
+                .IsRequired();
+            entity.Property(e => e.IsActive).HasDefaultValue(false);
         });
 
         modelBuilder.Entity<Slot>(entity =>

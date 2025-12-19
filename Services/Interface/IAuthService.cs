@@ -5,6 +5,6 @@ namespace FPT_Booking_BE.Services
     public interface IAuthService
     {
         Task<string> Login(LoginRequest request);
-        // Task<string?> LoginWithGoogle(string idToken);
+        Task<string> LoginWithGoogle(string idToken);
     }
 }
