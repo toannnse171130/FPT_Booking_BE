@@ -23,6 +23,7 @@ namespace FPT_Booking_BE.DTOs
     {
         public int BookingId { get; set; }
         public int SlotId { get; set; }
+        public int FacilityId { get; set; }
         public string FacilityName { get; set; } = null!; 
         public string CampusName { get; set; } = null!;  
         public DateTime BookingDate { get; set; }

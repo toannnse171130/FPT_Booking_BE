@@ -711,6 +711,7 @@ namespace FPT_Booking_BE.Services
                 {
                     BookingId = b.BookingId,
                     SlotId = b.Slot.SlotId,
+                    FacilityId = b.Facility.FacilityId,
                     FacilityName = b.Facility != null ? b.Facility.FacilityName : "Unknown",
                     CampusName = (b.Facility != null && b.Facility.Campus != null) ? b.Facility.Campus.CampusName : "Unknown",
                     BookingDate = b.BookingDate.ToDateTime(TimeOnly.MinValue),
