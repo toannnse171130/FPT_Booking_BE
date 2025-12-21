@@ -177,7 +177,7 @@ namespace FPT_Booking_BE.Controllers
 
             if (!isViewingPublicSchedule)
             {
-                if (role != "Admin" && role != "Manager" && role != "Staff" && role != "FacilityAdmin")
+                if (role != "Admin" && role != "Manager" && role != "Staff" && role != "FacilityAdmin" && role != "Security")
                 {
                     request.UserId = userId;
                 }
