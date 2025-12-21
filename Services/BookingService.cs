@@ -735,9 +735,14 @@ namespace FPT_Booking_BE.Services
             };
         }
 
-        public async Task<int> GetTotalBookingsCount()
+        public async Task<int> GetTotalBookingsCount(int? userId)
         {
-            return await _bookingRepo.GetTotalBookingsCount();
+            if (userId.HasValue)
+            {
+                return await _bookingRepo.GetTotalBookingsCountByUser(userId.Value);
+            }
+            else
+                    return await _bookingRepo.GetTotalBookingsCount();
         }
 
         public async Task<BookingConflictDto?> CheckBookingConflict(int userId, int facilityId, DateOnly bookingDate, int slotId)

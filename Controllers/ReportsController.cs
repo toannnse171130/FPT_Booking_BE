@@ -52,7 +52,7 @@ namespace FPT_Booking_BE.Controllers
 
         // Admin/Manager duyệt báo cáo
         [HttpPut("{id}/status")]
-        [Authorize(Roles = "Admin,Manager")] 
+        [Authorize(Roles = "Admin,FacilityAdmin")] 
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] ReportStatusUpdate request)
         {
             var result = await _reportService.UpdateReportStatus(id, request.Status);

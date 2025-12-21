@@ -27,7 +27,7 @@ namespace FPT_Booking_BE.Services
 
         Task<PagedResult<BookingResponse>> GetBookingsFilterAsync(BookingFilterRequest request);
         
-        Task<int> GetTotalBookingsCount();
+        Task<int> GetTotalBookingsCount(int? userId);
 
         Task<BookingConflictDto?> CheckBookingConflict(int userId, int facilityId, DateOnly bookingDate, int slotId);
 

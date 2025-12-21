@@ -20,5 +20,6 @@ namespace FPT_Booking_BE.Repositories
         Task<Booking?> GetBookingByIdAsync(int id);
         Task UpdateBookingAsync(Booking booking);
         Task<int> GetTotalBookingsCount();
+        Task<int> GetTotalBookingsCountByUser(int userId);
     }
 }

@@ -174,5 +174,9 @@ namespace FPT_Booking_BE.Repositories
         {
             return await _context.Bookings.CountAsync();
         }
+        public async Task<int> GetTotalBookingsCountByUser(int userId)
+        {
+            return await _context.Bookings.CountAsync(b => b.UserId == userId);
+        }
     }
 }
