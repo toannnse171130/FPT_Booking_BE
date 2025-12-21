@@ -1,190 +1,289 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\",
+  "WorkspaceRootPath": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\controllers\\facilityassetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\facilityassetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\icampusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\icampusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\dashboardstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\dashboardstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\bookingfilterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\bookingfilterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\controllers\\campusescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\campusescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\campusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\campusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\campusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\campusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\campus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\campus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\securitytaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\securitytaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\fptfacilitybookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\fptfacilitybookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\controllers\\securitytaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\securitytaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\completetaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\completetaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\createtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\createtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\isecuritytaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\isecuritytaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\securitytask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\securitytask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\maintenancelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\maintenancelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\updateconditionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\updateconditionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\services\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\slotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\slotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\slotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\slotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\interface\\islotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\interface\\islotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\semesterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\semesterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\securitytaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\securitytaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\securitytaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\securitytaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\interface\\isecuritytaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\interface\\isecuritytaskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\interface\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\interface\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\interface\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\interface\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\interface\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\interface\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\facilitytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\facilitytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\googleloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\googleloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\facilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\facilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\facilitytyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\facilitytyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\interface\\ifacilitytyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\interface\\ifacilitytyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\facilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\facilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\interface\\ifacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\interface\\ifacilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\interface\\ifacilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\interface\\ifacilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\campusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\campusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\interface\\icampusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\interface\\icampusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\campusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\campusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\campusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\campusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\interface\\icampusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\interface\\icampusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\assetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\assetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\controllers\\facilityassetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\facilityassetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\dashboardstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\dashboardstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\bookingfilterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\bookingfilterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\controllers\\campusescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\campusescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\models\\campus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\campus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\models\\fptfacilitybookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\fptfacilitybookingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\controllers\\securitytaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\securitytaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\completetaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\completetaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\createtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\createtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\models\\securitytask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\securitytask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\updateconditionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\updateconditionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\models\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\facilityasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\models\\facilityasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\facilityasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\repositories\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:repositories\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\staffcancelrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\staffcancelrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\staffcancelrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\backend\\fpt_booking_be\\dtos\\createnotirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|e:\\job fa25\\1m\\new folder\\fpt_booking_be\\dtos\\createnotirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FAAE19C-A89E-5086-F1A9-FA79E84416DC}|FPT_Booking_BE.csproj|solutionrelative:dtos\\createnotirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IDashboardService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ICampusService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IBookingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IUserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IReportService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ISecurityTaskService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\MaintenanceLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IAssetService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Repositories\\IBookingRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -198,76 +297,479 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IDashboardService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IDashboardService.cs",
-              "RelativeDocumentMoniker": "Services\\IDashboardService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IDashboardService.cs",
-              "RelativeToolTip": "Services\\IDashboardService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IUserRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T11:22:22.293Z",
+              "WhenOpened": "2025-12-20T16:36:01.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BookingFilterRequest.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\BookingFilterRequest.cs",
-              "RelativeDocumentMoniker": "DTOs\\BookingFilterRequest.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\BookingFilterRequest.cs",
-              "RelativeToolTip": "DTOs\\BookingFilterRequest.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwB8AAAAoAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ISlotRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\ISlotRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\ISlotRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\ISlotRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\ISlotRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:41:54.738Z",
+              "WhenOpened": "2025-12-20T16:34:11.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAUwCwAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "SlotRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\SlotRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\SlotRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\SlotRepository.cs",
+              "RelativeToolTip": "Repositories\\SlotRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:12:11.403Z",
+              "WhenOpened": "2025-12-20T16:33:48.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ICampusService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ICampusService.cs",
-              "RelativeDocumentMoniker": "Services\\ICampusService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ICampusService.cs",
-              "RelativeToolTip": "Services\\ICampusService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "SlotService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\SlotService.cs",
+              "RelativeDocumentMoniker": "Services\\SlotService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\SlotService.cs",
+              "RelativeToolTip": "Services\\SlotService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wBcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:00:04.849Z",
+              "WhenOpened": "2025-12-20T16:33:39.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwE4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:11:04.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:24:18.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAnwA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T12:37:43.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SemesterService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\SemesterService.cs",
+              "RelativeDocumentMoniker": "Services\\SemesterService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\SemesterService.cs",
+              "RelativeToolTip": "Services\\SemesterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:33:35.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SecurityTaskRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\SecurityTaskRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\SecurityTaskRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\SecurityTaskRepository.cs",
+              "RelativeToolTip": "Repositories\\SecurityTaskRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:30:48.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISecurityTaskRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\ISecurityTaskRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\ISecurityTaskRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\ISecurityTaskRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\ISecurityTaskRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:30:33.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IReportRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\IReportRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IReportRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\IReportRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IReportRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:28:16.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReportRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\ReportRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ReportRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\ReportRepository.cs",
+              "RelativeToolTip": "Repositories\\ReportRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwBIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:27:02.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SecurityTaskService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\SecurityTaskService.cs",
+              "RelativeDocumentMoniker": "Services\\SecurityTaskService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\SecurityTaskService.cs",
+              "RelativeToolTip": "Services\\SecurityTaskService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwE4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T09:14:27.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Program.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Program.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEgAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAkwFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T12:39:16.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
+              "Title": "IReportService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\Interface\\IReportService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IReportService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\Interface\\IReportService.cs",
+              "RelativeToolTip": "Services\\Interface\\IReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:27:30.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\NotificationRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\NotificationRepository.cs",
+              "RelativeToolTip": "Repositories\\NotificationRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:26:23.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\NotificationService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\NotificationService.cs",
+              "RelativeToolTip": "Services\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:25:51.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "Services\\ReportService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\ReportService.cs",
+              "RelativeToolTip": "Services\\ReportService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwCgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T09:49:25.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "INotificationRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\INotificationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\INotificationRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\INotificationRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\INotificationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:26:22.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GoogleLoginRequest.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\GoogleLoginRequest.cs",
+              "RelativeDocumentMoniker": "Services\\GoogleLoginRequest.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\GoogleLoginRequest.cs",
+              "RelativeToolTip": "Services\\GoogleLoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:25:46.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GenericService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\GenericService.cs",
+              "RelativeDocumentMoniker": "Services\\GenericService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\GenericService.cs",
+              "RelativeToolTip": "Services\\GenericService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:25:40.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FacilityTypeRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\FacilityTypeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\FacilityTypeRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\FacilityTypeRepository.cs",
+              "RelativeToolTip": "Repositories\\FacilityTypeRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:24:04.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FacilityTypeService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\FacilityTypeService.cs",
+              "RelativeDocumentMoniker": "Services\\FacilityTypeService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\FacilityTypeService.cs",
+              "RelativeToolTip": "Services\\FacilityTypeService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:22:57.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IFacilityTypeRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\IFacilityTypeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IFacilityTypeRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\IFacilityTypeRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IFacilityTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:23:33.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IFacilityService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\Interface\\IFacilityService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IFacilityService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\Interface\\IFacilityService.cs",
+              "RelativeToolTip": "Services\\Interface\\IFacilityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:22:39.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FacilityRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\FacilityRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\FacilityRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\FacilityRepository.cs",
+              "RelativeToolTip": "Repositories\\FacilityRepository.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAA9wDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:20:08.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FacilityService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\FacilityService.cs",
+              "RelativeDocumentMoniker": "Services\\FacilityService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\FacilityService.cs",
+              "RelativeToolTip": "Services\\FacilityService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:19:29.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IFacilityRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\IFacilityRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IFacilityRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\IFacilityRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IFacilityRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:20:07.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CampusRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\CampusRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CampusRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\CampusRepository.cs",
+              "RelativeToolTip": "Repositories\\CampusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:13:45.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ICampusService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\Interface\\ICampusService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\ICampusService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\Interface\\ICampusService.cs",
+              "RelativeToolTip": "Services\\Interface\\ICampusService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:13:39.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AssetRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\AssetRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\AssetRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\AssetRepository.cs",
+              "RelativeToolTip": "Repositories\\AssetRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:11:17.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CampusService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\CampusService.cs",
+              "RelativeDocumentMoniker": "Services\\CampusService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\CampusService.cs",
+              "RelativeToolTip": "Services\\CampusService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T09:51:11.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CampusDto.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\CampusDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CampusDto.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\CampusDto.cs",
+              "RelativeToolTip": "DTOs\\CampusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T09:59:16.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "Services\\DashboardService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\DashboardService.cs",
+              "RelativeToolTip": "Services\\DashboardService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwA8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T11:23:06.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ICampusRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\ICampusRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\ICampusRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\Interface\\ICampusRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\ICampusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T16:14:17.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-20T16:09:47.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "BookingsController.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\BookingsController.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\BookingsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\BookingsController.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\BookingsController.cs",
               "RelativeToolTip": "Controllers\\BookingsController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -276,388 +778,325 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FacilityAssetController.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\FacilityAssetController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FacilityAssetController.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\FacilityAssetController.cs",
-              "RelativeToolTip": "Controllers\\FacilityAssetController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:38:21.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DashboardService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\DashboardService.cs",
-              "RelativeDocumentMoniker": "Services\\DashboardService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\DashboardService.cs",
-              "RelativeToolTip": "Services\\DashboardService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwDUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T11:23:06.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T11:23:31.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BookingService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\BookingService.cs",
-              "RelativeDocumentMoniker": "Services\\BookingService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\BookingService.cs",
-              "RelativeToolTip": "Services\\BookingService.cs",
-              "ViewState": "AgIAAHoBAAAAAAAAAAAewAYCAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:08:28.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 35,
               "Title": "AssetService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\AssetService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\AssetService.cs",
               "RelativeDocumentMoniker": "Services\\AssetService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\AssetService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\AssetService.cs",
               "RelativeToolTip": "Services\\AssetService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAwwA8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T12:37:22.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 34,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "Services\\BookingService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Services\\BookingService.cs",
+              "RelativeToolTip": "Services\\BookingService.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAkwA4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T12:08:28.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ICampusService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ICampusService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Services\\ICampusService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ICampusService.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Services\\ICampusService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:00:04.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwCwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:12:11.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "BookingFilterRequest.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\BookingFilterRequest.cs",
+              "RelativeDocumentMoniker": "DTOs\\BookingFilterRequest.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\BookingFilterRequest.cs",
+              "RelativeToolTip": "DTOs\\BookingFilterRequest.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:41:54.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "IDashboardService.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IDashboardService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IDashboardService.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IDashboardService.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IDashboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T11:22:22.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "FacilityAssetController.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\FacilityAssetController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FacilityAssetController.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\FacilityAssetController.cs",
+              "RelativeToolTip": "Controllers\\FacilityAssetController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T12:38:21.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T11:23:31.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
               "Title": "DashboardStatsResponse.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\DashboardStatsResponse.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\DashboardStatsResponse.cs",
               "RelativeDocumentMoniker": "DTOs\\DashboardStatsResponse.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\DashboardStatsResponse.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\DashboardStatsResponse.cs",
               "RelativeToolTip": "DTOs\\DashboardStatsResponse.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA7wBYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T11:22:01.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T11:22:01.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 66,
               "Title": "IBookingService.cs",
               "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IBookingService.cs",
-              "RelativeDocumentMoniker": "Services\\IBookingService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IBookingService.cs",
               "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IBookingService.cs",
-              "RelativeToolTip": "Services\\IBookingService.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IBookingService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:12:22.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T12:12:22.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 67,
               "Title": "IUserService.cs",
               "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IUserService.cs",
               "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IUserService.cs",
-              "RelativeToolTip": "Services\\IUserService.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IUserService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAWwAkAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:10:43.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:10:43.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAnwCMAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:11:04.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:24:18.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 68,
               "Title": "IReportService.cs",
               "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IReportService.cs",
-              "RelativeDocumentMoniker": "Services\\IReportService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IReportService.cs",
               "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IReportService.cs",
-              "RelativeToolTip": "Services\\IReportService.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IReportService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:49:33.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:49:33.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 44,
               "Title": "UserDTO.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\UserDTO.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\UserDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\UserDTO.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\UserDTO.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\UserDTO.cs",
               "RelativeToolTip": "DTOs\\UserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:10:10.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:10:10.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 46,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:05:56.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:05:56.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 45,
               "Title": "LoginRequest.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\LoginRequest.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\LoginRequest.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\LoginRequest.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\LoginRequest.cs",
               "RelativeToolTip": "DTOs\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T10:10:01.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:10:01.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CampusDto.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\CampusDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\CampusDto.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\CampusDto.cs",
-              "RelativeToolTip": "DTOs\\CampusDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:59:16.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 48,
               "Title": "Campus.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Campus.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Campus.cs",
               "RelativeDocumentMoniker": "Models\\Campus.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Campus.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Campus.cs",
               "RelativeToolTip": "Models\\Campus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:58:01.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:58:01.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 47,
               "Title": "CampusesController.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\CampusesController.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\CampusesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CampusesController.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\CampusesController.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\CampusesController.cs",
               "RelativeToolTip": "Controllers\\CampusesController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAmwDcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:51:24.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:51:24.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CampusService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\CampusService.cs",
-              "RelativeDocumentMoniker": "Services\\CampusService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\CampusService.cs",
-              "RelativeToolTip": "Services\\CampusService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:51:11.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ReportService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ReportService.cs",
-              "RelativeDocumentMoniker": "Services\\ReportService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ReportService.cs",
-              "RelativeToolTip": "Services\\ReportService.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAiwE4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:49:25.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 50,
               "Title": "FptFacilityBookingContext.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\FptFacilityBookingContext.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\FptFacilityBookingContext.cs",
               "RelativeDocumentMoniker": "Models\\FptFacilityBookingContext.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\FptFacilityBookingContext.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\FptFacilityBookingContext.cs",
               "RelativeToolTip": "Models\\FptFacilityBookingContext.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAwwCYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:19:35.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:19:35.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 52,
               "Title": "CompleteTaskRequest.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\CompleteTaskRequest.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\CompleteTaskRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\CompleteTaskRequest.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\CompleteTaskRequest.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\CompleteTaskRequest.cs",
               "RelativeToolTip": "DTOs\\CompleteTaskRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:16:49.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:16:49.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 53,
               "Title": "CreateTaskRequest.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\CreateTaskRequest.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\CreateTaskRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\CreateTaskRequest.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\CreateTaskRequest.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\CreateTaskRequest.cs",
               "RelativeToolTip": "DTOs\\CreateTaskRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:16:27.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:16:27.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 51,
               "Title": "SecurityTaskController.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\SecurityTaskController.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\SecurityTaskController.cs",
               "RelativeDocumentMoniker": "Controllers\\SecurityTaskController.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\SecurityTaskController.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\SecurityTaskController.cs",
               "RelativeToolTip": "Controllers\\SecurityTaskController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:15:09.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:15:09.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "SecurityTaskService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\SecurityTaskService.cs",
-              "RelativeDocumentMoniker": "Services\\SecurityTaskService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\SecurityTaskService.cs",
-              "RelativeToolTip": "Services\\SecurityTaskService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:14:27.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 54,
               "Title": "SecurityTask.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\SecurityTask.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\SecurityTask.cs",
               "RelativeDocumentMoniker": "Models\\SecurityTask.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\SecurityTask.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\SecurityTask.cs",
               "RelativeToolTip": "Models\\SecurityTask.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:13:43.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:13:43.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 49,
               "Title": "Report.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Report.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Report.cs",
               "RelativeDocumentMoniker": "Models\\Report.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Report.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Report.cs",
               "RelativeToolTip": "Models\\Report.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA5wCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T04:11:23.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T04:11:23.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 69,
               "Title": "ISecurityTaskService.cs",
               "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ISecurityTaskService.cs",
-              "RelativeDocumentMoniker": "Services\\ISecurityTaskService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Services\\ISecurityTaskService.cs",
               "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\ISecurityTaskService.cs",
-              "RelativeToolTip": "Services\\ISecurityTaskService.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Services\\ISecurityTaskService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:13:24.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:13:24.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 55,
               "Title": "Role.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Role.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Role.cs",
               "RelativeDocumentMoniker": "Models\\Role.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Role.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Role.cs",
               "RelativeToolTip": "Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T04:11:24.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T04:11:24.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 70,
               "Title": "MaintenanceLog.cs",
               "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\MaintenanceLog.cs",
-              "RelativeDocumentMoniker": "Models\\MaintenanceLog.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Models\\MaintenanceLog.cs",
               "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\MaintenanceLog.cs",
-              "RelativeToolTip": "Models\\MaintenanceLog.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Models\\MaintenanceLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T04:10:40.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T04:10:40.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 56,
               "Title": "UpdateConditionRequest.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\UpdateConditionRequest.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\UpdateConditionRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\UpdateConditionRequest.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\UpdateConditionRequest.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\UpdateConditionRequest.cs",
               "RelativeToolTip": "DTOs\\UpdateConditionRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -665,35 +1104,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Services\\AuthService.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\AuthService.cs",
-              "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:37:43.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 71,
               "Title": "IAssetService.cs",
               "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IAssetService.cs",
-              "RelativeDocumentMoniker": "Services\\IAssetService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IAssetService.cs",
               "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Services\\IAssetService.cs",
-              "RelativeToolTip": "Services\\IAssetService.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Services\\IAssetService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T12:37:04.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 57,
               "Title": "Asset.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Asset.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Asset.cs",
               "RelativeDocumentMoniker": "Models\\Asset.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Asset.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Asset.cs",
               "RelativeToolTip": "Models\\Asset.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -701,11 +1128,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 58,
               "Title": "FacilityAsset.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\FacilityAsset.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\FacilityAsset.cs",
               "RelativeDocumentMoniker": "Models\\FacilityAsset.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\FacilityAsset.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\FacilityAsset.cs",
               "RelativeToolTip": "Models\\FacilityAsset.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAowBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -713,11 +1140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 59,
               "Title": "Booking.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Booking.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "Models\\Booking.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Models\\Booking.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Models\\Booking.cs",
               "RelativeToolTip": "Models\\Booking.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAQwDAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -725,23 +1152,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 72,
               "Title": "IBookingRepository.cs",
               "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Repositories\\IBookingRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IBookingRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\FPT_Booking_BE\\Repositories\\IBookingRepository.cs",
               "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Repositories\\IBookingRepository.cs",
-              "RelativeToolTip": "Repositories\\IBookingRepository.cs",
+              "RelativeToolTip": "..\\..\\Backend\\FPT_Booking_BE\\Repositories\\IBookingRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-12T12:14:42.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 61,
               "Title": "StaffCancelRequest.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\StaffCancelRequest.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\StaffCancelRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\StaffCancelRequest.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\StaffCancelRequest.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\StaffCancelRequest.cs",
               "RelativeToolTip": "DTOs\\StaffCancelRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -749,11 +1176,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 60,
               "Title": "BookingRepository.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Repositories\\BookingRepository.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\BookingRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\BookingRepository.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Repositories\\BookingRepository.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Repositories\\BookingRepository.cs",
               "RelativeToolTip": "Repositories\\BookingRepository.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAmwGAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -761,11 +1188,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 63,
               "Title": "CreateNotiRequest.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\CreateNotiRequest.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\CreateNotiRequest.cs",
               "RelativeDocumentMoniker": "DTOs\\CreateNotiRequest.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\DTOs\\CreateNotiRequest.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\DTOs\\CreateNotiRequest.cs",
               "RelativeToolTip": "DTOs\\CreateNotiRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -773,11 +1200,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 62,
               "Title": "NotificationsController.cs",
-              "DocumentMoniker": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\NotificationsController.cs",
+              "DocumentMoniker": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\NotificationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\NotificationsController.cs",
-              "ToolTip": "E:\\JOB FA25\\1M\\Backend\\FPT_Booking_BE\\Controllers\\NotificationsController.cs",
+              "ToolTip": "E:\\JOB FA25\\1M\\New folder\\fpt_booking_be\\Controllers\\NotificationsController.cs",
               "RelativeToolTip": "Controllers\\NotificationsController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAgwCwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

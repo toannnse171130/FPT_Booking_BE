@@ -4,7 +4,10 @@ namespace FPT_Booking_BE.Repositories
 {
     public interface IFacilityRepository
     {
-        Task<IEnumerable<Facility>> GetFacilities(int? campusId, int? typeId);
-        Task<Facility> GetFacilityById(int id);
+        Task<List<Facility>> GetAllFacilitiesAsync(string? name, int? campusId, int? typeId, int? slotId, DateOnly? date);
+        Task<Facility?> GetByIdAsync(int id);
+        Task<bool> CheckNameExistsAsync(string name);
+        Task AddAsync(Facility facility);
+        Task UpdateAsync(Facility facility);
     }
 }

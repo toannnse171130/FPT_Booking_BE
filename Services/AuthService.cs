@@ -22,7 +22,7 @@ namespace FPT_Booking_BE.Services
 
         public async Task<string> Login(LoginRequest request)
         {
-            var user = await _userRepo.GetUserByEmail(request.Email);
+            var user = await _userRepo.GetUserByEmailAsync(request.Email);
 
             if (user == null || user.PasswordHash != request.Password)
             {
@@ -104,7 +104,7 @@ namespace FPT_Booking_BE.Services
                     throw new Exception("Chỉ chấp nhận email @fpt.edu.vn");
                 }
 
-                var user = await _userRepo.GetUserByEmail(email);
+                var user = await _userRepo.GetUserByEmailAsync(email);
 
                 if (user == null)
                 {
@@ -150,13 +150,4 @@ namespace FPT_Booking_BE.Services
     }
 
     // Helper class for Google UserInfo API response
-    public class GoogleUserInfo
-    {
-        public string Email { get; set; }
-        public string Name { get; set; }
-        public string Given_Name { get; set; }
-        public string Family_Name { get; set; }
-        public string Picture { get; set;
-        }
-    }
 }

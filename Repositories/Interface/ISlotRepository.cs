@@ -4,6 +4,6 @@ namespace FPT_Booking_BE.Repositories
 {
     public interface ISlotRepository
     {
-        Task<IEnumerable<Slot>> GetAllSlots();
+        Task<List<Slot>> GetAvailableSlotsAsync(int? facilityId, DateOnly? date);
     }
 }
