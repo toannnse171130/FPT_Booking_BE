@@ -18,9 +18,11 @@ namespace FPT_Booking_BE.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(
+            [FromQuery] int? facilityId,
+            [FromQuery] DateOnly? date)
         {
-            var slots = await _slotService.GetAllSlots();
+            var slots = await _slotService.GetAllSlots(facilityId, date);
             return Ok(slots);
         }
     }

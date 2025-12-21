@@ -7,7 +7,7 @@ namespace FPT_Booking_BE.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")] 
+    [Authorize(Roles = "Admin,FacilityAdmin")] 
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;

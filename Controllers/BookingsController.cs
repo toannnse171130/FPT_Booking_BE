@@ -39,11 +39,11 @@ namespace FPT_Booking_BE.Controllers
                 return BadRequest(new { message = result });
             }
 
-            return Ok(new { message = "Gửi yêu cầu đặt phòng thành công!!" });
+            return Ok(new { message = "Gửi yêu cầu đặt phòng thành công!" });
         }
-        
+
         [HttpPut("{id}/status")]
-        [Authorize(Roles = "Admin,Manager")] 
+        [Authorize(Roles = "Admin,FacilityAdmin")]
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] BookingStatusUpdate request)
         {
             if (request.Status != "Approved" && request.Status != "Rejected")
@@ -53,12 +53,23 @@ namespace FPT_Booking_BE.Controllers
 
             var result = await _bookingService.UpdateStatus(id, request.Status, request.RejectionReason);
 
-            if (!result)
+            switch (result)
             {
-                return BadRequest(new { message = "Không tìm thấy đơn đặt phòng hoặc đơn này không ở trạng thái 'Pending' để duyệt." });
-            }
+                case "Success":
+                    return Ok(new { message = $"Đã cập nhật trạng thái thành {request.Status}" });
 
-            return Ok(new { message = $"Đã cập nhật trạng thái thành {request.Status}" });
+                case "NotFound":
+                    return NotFound(new { message = "Không tìm thấy đơn đặt phòng." });
+
+                case "NotPending":
+                    return BadRequest(new { message = "Chỉ có thể duyệt đơn đang ở trạng thái Pending." });
+
+                case "Expired": 
+                    return BadRequest(new { message = "Không thể DUYỆT đơn này vì thời gian bắt đầu (Slot) đã trôi qua." });
+
+                default:
+                    return StatusCode(500, new { message = "Lỗi hệ thống." });
+            }
         }
 
 
@@ -180,6 +191,127 @@ namespace FPT_Booking_BE.Controllers
             }
 
             var result = await _bookingService.GetBookingsFilterAsync(request);
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Get only individual (non-recurring) bookings
+        /// </summary>
+        [HttpGet("individual")]
+        public async Task<IActionResult> GetIndividualBookings([FromQuery] int? userId, [FromQuery] string? status)
+        {
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            var currentUserId = int.Parse(User.FindFirst("UserId")?.Value ?? "0");
+
+            // Non-admin users can only see their own bookings
+            if (role != "Admin" && role != "Manager" && role != "Staff" && role != "FacilityAdmin")
+            {
+                userId = currentUserId;
+            }
+
+            var bookings = await _bookingService.GetIndividualBookings(userId, status);
+            return Ok(bookings);
+        }
+
+        /// <summary>
+        /// Get only recurring bookings (individual bookings)
+        /// </summary>
+        [HttpGet("recurring")]
+        public async Task<IActionResult> GetRecurringBookings([FromQuery] int? userId, [FromQuery] string? status)
+        {
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            var currentUserId = int.Parse(User.FindFirst("UserId")?.Value ?? "0");
+
+            // Non-admin users can only see their own bookings
+            if (role != "Admin" && role != "Manager" && role != "Staff" && role != "FacilityAdmin")
+            {
+                userId = currentUserId;
+            }
+
+            var bookings = await _bookingService.GetRecurringBookings(userId, status);
+            return Ok(bookings);
+        }
+
+        /// <summary>
+        /// Get recurring bookings grouped by series (ONE entry per recurring series)
+        /// Perfect for managers to approve/view recurring booking series
+        /// </summary>
+        [HttpGet("recurring-groups")]
+        public async Task<IActionResult> GetRecurringBookingGroups([FromQuery] int? userId)
+        {
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            var currentUserId = int.Parse(User.FindFirst("UserId")?.Value ?? "0");
+
+            // Non-admin users can only see their own bookings
+            if (role != "Admin" && role != "Manager" && role != "Staff" && role != "FacilityAdmin")
+            {
+                userId = currentUserId;
+            }
+
+            var groups = await _bookingService.GetRecurringBookingGroupsAsync(userId);
+            return Ok(groups);
+        }
+
+        /// <summary>
+        /// Get all bookings that belong to a specific recurring group
+        /// </summary>
+        [HttpGet("recurring-group/{recurrenceGroupId}")]
+        public async Task<IActionResult> GetBookingsByRecurringGroupId(string recurrenceGroupId)
+        {
+            var bookings = await _bookingService.GetBookingsByRecurringGroupId(recurrenceGroupId);
+            return Ok(bookings);
+        }
+
+        /// <summary>
+        /// Get total count of all bookings
+        /// </summary>
+        [HttpGet("count")]
+        public async Task<IActionResult> GetTotalBookingsCount()
+        {
+            var count = await _bookingService.GetTotalBookingsCount();
+            return Ok(new { totalBookings = count });
+        }
+
+        /// <summary>
+        /// Check if there's a booking conflict for a specific facility, date, and slot
+        /// Returns conflict details including the user who booked it and whether you can override
+        /// </summary>
+        [HttpPost("check-conflict")]
+        public async Task<IActionResult> CheckBookingConflict([FromBody] BookingCreateRequest request)
+        {
+            var userIdClaim = User.FindFirst("UserId");
+            if (userIdClaim == null)
+            {
+                return Unauthorized(new { message = "Token không hợp lệ" });
+            }
+
+            int userId = int.Parse(userIdClaim.Value);
+            var conflict = await _bookingService.CheckBookingConflict(userId, request.FacilityId, request.BookingDate, request.SlotId);
+
+            if (conflict == null)
+            {
+                return Ok(new { hasConflict = false, message = "Phòng trống, có thể đặt" });
+            }
+
+            return Ok(new { hasConflict = true, conflict });
+        }
+
+        /// <summary>
+        /// Check conflicts for recurring booking across all dates
+        /// Returns detailed conflict information for each date in the recurring pattern
+        /// </summary>
+        [HttpPost("check-recurring-conflicts")]
+        public async Task<IActionResult> CheckRecurringConflicts([FromBody] BookingRecurringRequest request)
+        {
+            var userIdClaim = User.FindFirst("UserId");
+            if (userIdClaim == null)
+            {
+                return Unauthorized(new { message = "Token không hợp lệ" });
+            }
+
+            int userId = int.Parse(userIdClaim.Value);
+            var result = await _bookingService.CheckRecurringConflicts(userId, request);
+
             return Ok(result);
         }
 
