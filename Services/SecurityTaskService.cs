@@ -96,8 +96,29 @@ namespace FPT_Booking_BE.Services
         {
             var task = await _context.SecurityTasks
                 .Include(t => t.Booking)
+                .Include(t => t.Booking.Facility)
                 .FirstOrDefaultAsync(t => t.TaskId == taskId);
             if (task == null) return false;
+            if (task.TaskType == "Check-in" && task.Booking != null && reportNote != "No")
+            {
+                task.Booking.Status = "Checked-In";
+                CreateTaskAsync(new SecurityTask
+                {
+                    Title = $"Theo dõi Check-out cho đặt chỗ {task.Booking.Facility?.FacilityName}",
+                    Description = $"Theo dõi việc check-out cho đặt chỗ {task.Booking.Facility?.FacilityName} slot {task.Booking.SlotId}",
+                    Status = "Pending",
+                    Priority = "Medium",
+                    TaskType = "Check-out",
+                    AssignedToUserId = task.AssignedToUserId,
+                    BookingId = task.BookingId,
+                    CreatedBy = task.CreatedBy,
+                    CreatedAt = DateTime.Now
+                }).Wait();
+            }
+            if (task.TaskType == "Check-out" && task.Booking != null)
+            {
+                task.Booking.Status = "Completed";
+            }
 
             task.Status = "Completed";
             task.CompletedAt = DateTime.Now;

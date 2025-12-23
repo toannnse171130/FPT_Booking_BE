@@ -15,6 +15,7 @@ public partial class SecurityTask
     public string Status { get; set; } = null!;
 
     public string Priority { get; set; } = null!;
+    public string? TaskType { get; set; } = null!;
 
     public int? AssignedToUserId { get; set; }
 

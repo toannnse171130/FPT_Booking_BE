@@ -178,7 +178,7 @@ namespace FPT_Booking_BE.Migrations
                         new
                         {
                             BookingId = 1,
-                            BookingDate = new DateOnly(2025, 12, 19),
+                            BookingDate = new DateOnly(2025, 12, 23),
                             BookingType = "Individual",
                             CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FacilityId = 1,
@@ -192,7 +192,7 @@ namespace FPT_Booking_BE.Migrations
                         new
                         {
                             BookingId = 2,
-                            BookingDate = new DateOnly(2025, 12, 20),
+                            BookingDate = new DateOnly(2025, 12, 24),
                             BookingType = "Individual",
                             CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FacilityId = 2,
@@ -846,6 +846,9 @@ namespace FPT_Booking_BE.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasDefaultValue("Pending");
+
+                    b.Property<string>("TaskType")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()

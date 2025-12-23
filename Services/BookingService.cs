@@ -425,6 +425,7 @@ namespace FPT_Booking_BE.Services
                         CreatedBy = booking.UserId,
                         AssignedToUserId = assignedToUserId, // Use provided security staff if specified
                         BookingId = booking.BookingId,
+                        TaskType = "Check-in",
                         CreatedAt = DateTime.Now
                     };
                     
