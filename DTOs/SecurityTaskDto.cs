@@ -8,6 +8,8 @@ namespace FPT_Booking_BE.DTOs
         public string Status { get; set; } = "Pending";
         public string Priority { get; set; } = "Normal";
         public string? TaskType { get; set; }
+        public DateOnly? DueDate { get; set; }
+        public TimeOnly? DueTime { get; set; }
         public int? AssignedToUserId { get; set; }
         public string? AssignedToUserName { get; set; }
         public int CreatedBy { get; set; }

@@ -1,5 +1,6 @@
 ﻿using FPT_Booking_BE.DTOs;
 using FPT_Booking_BE.Models;
+using FPT_Booking_BE.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace FPT_Booking_BE.Services
@@ -8,11 +9,13 @@ namespace FPT_Booking_BE.Services
     {
         private readonly FptFacilityBookingContext _context;
         private readonly INotificationService _notiService; 
+        private readonly ISlotRepository _slotRepository;
 
-        public SecurityTaskService(FptFacilityBookingContext context, INotificationService notiService)
+        public SecurityTaskService(FptFacilityBookingContext context, INotificationService notiService, ISlotRepository slotRepository)
         {
             _context = context;
             _notiService = notiService;
+            _slotRepository = slotRepository;
         }
 
         public async Task CreateTaskAsync(SecurityTask task)
@@ -66,7 +69,7 @@ namespace FPT_Booking_BE.Services
                     var assignedUser = await _context.Users.FindAsync(task.AssignedToUserId.Value);
                     assignedToUserName = assignedUser?.FullName ?? "Unknown";
                 }
-
+                var slotTime = await _slotRepository.GetSlotById(task.Booking?.SlotId ?? 1);
                 var createdByUser = await _context.Users.FindAsync(task.CreatedBy);
                 createdByUserName = createdByUser?.FullName ?? "Unknown";
                 result.Add(new SecurityTaskDto
@@ -77,6 +80,8 @@ namespace FPT_Booking_BE.Services
                     Status = task.Status,
                     Priority = task.Priority,
                     TaskType = task.TaskType,
+                    DueDate = task.Booking?.BookingDate,
+                    DueTime = slotTime?.StartTime ?? new TimeOnly(),
                     AssignedToUserId = task.AssignedToUserId,
                     AssignedToUserName = assignedToUserName,
                     CreatedBy = task.CreatedBy,
